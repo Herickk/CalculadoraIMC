@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         val edt_peso = findViewById<TextInputEditText>(R.id.edt_peso)
         val edt_altura = findViewById<TextInputEditText>(R.id.edt_altura)
+<<<<<<< validar_campos_vazio
         val btn_calcular = findViewById<Button>(R.id.btn_calcular)
 
         btn_calcular.setOnClickListener {
@@ -39,6 +40,19 @@ class MainActivity : AppCompatActivity() {
                 val alturaQ2 = altura * altura
                 val resultado = peso / alturaQ2
 
+=======
+
+        val btn_calcular =findViewById<Button>(R.id.btn_calcular)
+
+        btn_calcular.setOnClickListener{
+            val peso: Float = edt_peso.text.toString().toFloat()
+            val altura: Float = edt_altura.text.toString().toFloat()
+
+           val alturaQ2 = altura * altura
+            val resultado = peso / alturaQ2
+            println("açao do botao Herick" + resultado )
+        }
+>>>>>>> master
 
 
 
